@@ -1,0 +1,115 @@
+.structure {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ensure the container takes the full viewport height */
+    overflow-y: auto;
+    overflow-x: hidden;
+    scrollbar-width: none; /* For Firefox */
+    -ms-overflow-style: none;
+}
+.structure::-webkit-scrollbar {
+    width: 0; /* Remove scrollbar width */
+    height: 0; /* Remove scrollbar height */
+}
+
+/* For WebKit-based browsers (Chrome, Safari) */
+
+.load_modal{
+    display: flex;
+    justify-content: center;
+    background-color: #F0F0F5;
+}
+
+.container {
+    display: grid;
+    background-color: #F0F0F5;
+    width: 100%;
+    min-height: 100vh;
+    padding: 0px 100px 100px 100px;
+    gap: 20px;
+    justify-items: center;
+    justify-content: center;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    /* padding-left: 16%; */
+    /* overflow-y: auto; */
+
+}
+.container::-webkit-scrollbar {
+    height: 0;
+    width: 0;
+}
+
+
+.searchbar_wrap {
+    background-color: #F0F0F5;
+    text-align: center;
+    color: #1B263B;
+    padding-bottom: 50px;
+    padding-top: 174px;
+    justify-content: center;
+    /* padding-left: 10%; */
+}
+.searchbar {
+    /* text-align: center; */
+    background-color: #F0F0F5;
+    border-radius: 40px;
+    border: #1B263B 2px solid;
+    color: #1B263B;
+    margin-top: 10px;
+    font-size: 18px;
+    padding: 5px 20px 5px 20px;
+
+}
+
+.sort_value {
+    /* text-align: center; */
+    background-color: #F0F0F5;
+    border-radius: 40px;
+    border: #1B263B 2px solid;
+    color: #1B263B;
+    /* margin-top: 10px; */
+    font-size: 18px;
+    padding: 5px 20px 5px 20px;
+    /* margin: 5px 20px 5px 20px; */
+    font-weight: 500;
+    width: '100%',
+}
+
+.option_wrap {
+    color: #1B263B;
+    border-color: #1B263B;
+    border-width: 2px;
+    font-weight: 500;
+}
+
+.no_cards{
+    background-color: #F0F0F5;
+    text-align: center;
+    font-size: 60px;
+    color: #949494;
+}
+
+.no_cards1{
+    display: flex;
+    justify-content: center;
+    background-color: #F0F0F5;
+    font-size: 45px;
+    color: #949494;
+    text-align: center;
+    
+}
+
+.no_cards1_sub{
+    margin-left: 10px;
+    background-color: #F0F0F5;
+    font-size: 45px;
+    color: #1B263B;
+    text-decoration: underline;
+    text-align: center;
+}
+.no_cards1_sub:hover{
+    cursor: pointer;
+}
+
+
+

@@ -1,0 +1,22 @@
+/* .structure {
+    padding-top: 128px;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; 
+    overflow: auto;
+    background-color: #F0F0F5;
+}
+
+.main-content {
+    flex: 1; 
+}
+
+.structure::-webkit-scrollbar {
+    width: 0; 
+    height: 0;
+}
+@media (max-width: 900px) {
+    .structure {
+        padding-top: 80px;
+    }
+} */

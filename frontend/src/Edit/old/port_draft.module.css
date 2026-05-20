@@ -1,0 +1,141 @@
+.background{
+    padding-top: 20px;
+    background-color: #F0F0F5;
+    width: 100%;
+    height: auto;
+    position: relative;
+    text-align: center;
+}
+
+.list_wrap{
+    display: inline-block;
+    text-align: center;
+}
+
+.list{
+    display: grid;
+    grid-template-rows: repeat(auto-fill, 1fr);
+    row-gap: 5px;
+}
+
+.ss_front{
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background-color: #1B263B;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+.ss_middle{
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background-color: #1B263B;
+    text-align: center;
+}
+.ss_toggle{
+    background-color: #1B263B;
+    text-align: center;
+    padding-top: 5px;
+    /* padding-right: 13px; */
+}
+.ss_back{
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background-color: #1B263B;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.ss_delete{
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+    background-color: #1B263B;
+    border-radius: 10px;
+    transform: translateX(5px);
+}
+
+.ss_delete:hover{
+    cursor: pointer;
+}
+
+.selected_stock{
+    width: 30vw;
+    
+    color: #F0F0F5;
+    text-align: center;
+    display: grid;
+    grid-template-columns: 23% 23% 23% 23% 8%;
+    padding: 5px 10px 5px 10px;
+}
+
+.port_draft_headers{
+        width: 30vw;
+        font-size: small;
+        color: #1B263B;
+        text-align: center;
+        display: grid;
+        grid-template-columns: 23% 23% 23% 23% 8%;
+        padding: 5px 10px 5px 10px;
+}
+
+.stock_label {
+    font-size: 15px;
+    text-align: center;
+    justify-content: center;
+    font-weight: 700;
+}
+
+/* .selected_stock:hover{
+    background-color: #949494;
+    cursor: pointer;
+    text-decoration: line-through;
+    text-decoration-thickness: 3px;
+
+} */
+
+
+.percentage{
+    display: border-box;
+    width: 80px;
+    text-align: center;
+    border: 1px solid #F0F0F5;
+    background-color: #1B263B;
+    color: #F0F0F5;
+    border-radius: 5px;
+
+    
+}
+
+.percent_input{
+    width: 55px;
+    background-color: transparent;
+    color: #F0F0F5;
+    text-align: center;
+    border: none;
+
+
+}
+.percent_input:focus{
+    outline: none;
+}
+
+.smallToggleButtonGroup {
+    font-size: 0.75rem; /* Adjust the font size */
+    padding: 2px; /* Adjust the padding */
+  }
+
+  @media (max-width: 800px) {
+    .selected_stock {
+        width: 95vw;
+    }
+    .port_draft_headers {
+        width: 95vw;
+    }
+    .percent_input {
+        width: 40px;
+    }
+    .percentage {
+        width: 60px;
+        margin-left: 7px;
+    }
+  }

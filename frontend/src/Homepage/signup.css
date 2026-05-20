@@ -1,0 +1,30 @@
+.sign-up-button {
+    border-radius: 15px;
+    height: 55px;
+    position: relative;
+    width: 264px;
+  }
+  
+  .sign-up-button .text-wrapper {
+    color: #ffffff;
+    font-family: "Instrument Sans", Helvetica;
+    font-size: 25px;
+    font-weight: 600;
+    left: 83px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    text-align: center;
+    top: 11px;
+  }
+  
+  .sign-up-button:hover {
+    box-shadow: var(--shadow-4);
+  }
+  
+  .sign-up-button:hover .text-wrapper {
+    font-size: 30px;
+    left: 73px;
+    top: 8px;
+  }
+  

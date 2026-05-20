@@ -1,0 +1,49 @@
+.structure {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ensure the container takes the full viewport height */
+    overflow: auto;
+}
+
+.main-content {
+    flex: 1; /* This will make the main content take up the remaining space */
+}
+/* For WebKit-based browsers (Chrome, Safari) */
+.structure::-webkit-scrollbar {
+    width: 0; /* Remove scrollbar width */
+    height: 0; /* Remove scrollbar height */
+}
+
+.container {
+    display: grid;
+    background-color: #F0F0F5;
+    width: 100%;
+    min-height: 100vh;
+    padding: 100px 100px 100px 100px;
+    gap: 50px;
+    justify-items: center;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    /* overflow-y: auto; */
+
+}
+.container::-webkit-scrollbar {
+    height: 0;
+    width: 0;
+}
+.searchbar_wrap {
+    padding-top: 50px;
+    background-color: #F0F0F5;
+    text-align: center;
+    color: #1B263B;
+    padding-bottom: 50px;
+}
+.searchbar {
+    /* text-align: center; */
+    background-color: #F0F0F5;
+    border-radius: 40px;
+    border: #1B263B 2px solid;
+    color: #1B263B;
+    margin-top: 10px;
+    font-size: 18px;
+    padding: 5px 1100px 5px 20px;
+}

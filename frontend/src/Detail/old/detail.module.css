@@ -1,0 +1,237 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+
+.background {
+    background-color: #F0F0F5;
+    width: 100%;
+    height: auto;
+    padding: 5% 10% 5% 10%;
+    font-family: 'Roboto', sans-serif;
+    justify-content: center;
+}
+.grid_container{
+    /* margin-left: 15%; */
+    /* display: grid;
+    grid-template-columns: 45% 45%;
+    grid-gap: 300px;
+    flex-grow: 1;
+    align-items: center;
+    justify-content: center; */
+    
+}
+
+
+.graph{
+    width: 100%;
+    height: 500px;
+    /* flex-grow: 1; */
+    
+}
+
+.no_graph{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    height: 500px;
+    flex-grow: 1;
+    font-size: 80px;
+    text-align: center;
+    color: #949494;
+    
+}
+.content_container{
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center vertically */
+    justify-content: center; 
+    width: 60%;
+    min-width: 300px;
+    height: 100%;
+    background-color: #F0F0F5;
+}
+.quick_info_grid{
+    position: relative;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+
+}
+.quick_info_label{
+    display: flex;
+    align-items: center; /* Center vertically */
+    justify-content: left; /* Center horizontally (optional) */
+    padding-left: 15px;
+    margin-left: 10%;
+    height: 100%; /* Ensure the element takes the full height of its container */
+    text-align: center;
+    border-bottom: 3px solid #949494;
+}
+.quick_info_value{
+    display: flex;
+    align-items: center; /* Center vertically */
+    justify-content: right; /* Center horizontally (optional) */
+    padding-right: 15px;
+    margin-right: 10%;
+    height: 100%; /* Ensure the element takes the full height of its container */
+    text-align: center;
+    border-bottom: 3px solid #949494;
+}
+.role {/* Example background color */
+    color: #1B263B; /* Example text color */
+    font-weight: bold; /* Example style */
+    /* padding: 1px 3px;  */
+    border-radius: 2px; 
+    /* margin-right: 10px; Space between roles */
+    font-size: 15px;
+    margin-left: 10px;
+}
+
+.stock_button{
+    /* position: absolute;
+    transform: translate(25px, 55px); */
+
+}
+.stock_button:hover{
+    cursor: pointer;
+}
+.stock_button_m{
+    /* position: absolute;
+    transform: translate(25px, 27px); */
+
+}
+.stock_button_m:hover{
+    cursor: pointer;
+}
+
+.quick_info_value_last{
+    display: flex;
+    align-items: center; /* Center vertically */
+    justify-content: right; /* Center horizontally (optional) */
+    padding-right: 15px;
+    margin-right: 10%;
+    height: 100%; /* Ensure the element takes the full height of its container */
+    text-align: center;
+}
+.quick_info_label_last{
+    display: flex;
+    align-items: center; /* Center vertically */
+    justify-content: left; /* Center horizontally (optional) */
+    padding-left: 15px;
+    margin-left: 10%;
+    height: 100%; /* Ensure the element takes the full height of its container */
+    text-align: center;
+}
+
+.button {
+    background-color: #1B263B;
+    color: white;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.button:hover {
+    background-color: #F0F0F5;
+    color: #1B263B;
+}
+
+.input_container {
+    display: flex;
+    align-items: center;
+  }
+
+.input {
+    max-width: 50%;
+    border-radius: 5px;
+    border: 2px solid #949494;
+}
+
+.reserve {
+    font-size: 20px;
+    color: #949494;
+    padding-left: 10px;
+
+}
+.button_container{
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: 49% 49%;
+    gap: 2%; /* Space between buttons */
+    align-items: center; /* Align items vertically in the center */
+    justify-content: center; /* Align items horizontally in the center */
+}
+.action_container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.desc{
+    box-sizing: border-box;
+    display: flex;
+    flex-grow: 1;
+    margin-top: 10px;
+    background-color: #F0F0F5;
+    border: #1B263B 2px solid;
+    border-radius: 5px;
+    color: #1B263B; /* Text color */
+    cursor: default; /* Change cursor to default */
+    resize: none; /* Disable resizing */
+    outline: none; /* Remove focus outline */
+    padding: 3px 3px 3px 3px; /* Add padding for better readability */
+    font-family: inherit; /* Inherit font from parent */
+    font-size: inherit; /* Inherit font size from parent */
+
+}
+
+.graphContainer {
+    width: 100%; /* Fixed width */
+    height: 100%; /* Fixed height */
+    position: relative; 
+}
+
+.graphContainer canvas {
+    width: 100%; /* !important; Ensure the canvas takes up the full width */
+    height: 100%; /* !important;  Ensure the canvas takes up the full height */
+}
+@media (max-width: 900px) {
+    .graph{
+        height: 100%;
+        /* flex-grow: 1; */
+        
+    }
+    .graphContainer {
+        width: 90vw;
+        height: 60vw;
+        margin-left: -30px;
+    }
+    .content_container{
+        padding: 0;
+        margin-left: -10px;
+        background-color: #F0F0F5;
+    }
+}
+
+.timeframeContainer {
+    display: flex;
+    justify-content: space-between; /* Adjusts spacing between items */
+    align-items: center; /* Aligns items vertically in the center */
+  }
+  
+  .timeframeItem {
+    margin: auto;
+    color: #1B263B;
+  }
+
+  .timeframeItem:hover {
+    font-weight: 600;
+    cursor: pointer;
+  }
+
+  .selected {
+    font-weight: bold; /* Makes the selected item bold */
+  }
+

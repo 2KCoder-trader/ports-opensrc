@@ -1,0 +1,268 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+
+.container {
+    display: grid;
+    background-color: #F0F0F5;
+    width: 100%;
+    min-height: 100vh;
+    padding: 100px 100px 100px 100px;
+    /* gap: 5000px; */
+    justify-items: center;
+    grid-template-columns: repeat(auto-fill, 375px);
+    /* overflow-y: auto; */
+
+}
+.container::-webkit-scrollbar {
+    height: 0;
+    width: 0;
+}
+
+
+
+.carde {
+    /* padding-top: 10px; */
+    width: 375px;
+    height: 375px;
+    border-radius: 10px;
+    border: 3px solid #1B263B;
+    background-color: #F0F0F5;
+    color: #1B263B;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+/* .cardExpanded {
+    padding-top: 10px;
+    width: 400px;
+    height: 750px; 
+    border: 3px solid #1B263B;
+    border-radius: 10px;
+    background-color: #F0F0F5;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2), 0 6px 6px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease, height 0.3s ease;
+    color: #1B263B;
+    font-family: 'Roboto', sans-serif;
+} */
+
+.carde:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4), 0 6px 6px rgba(0, 0, 0, 0.4);
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.cardExpanded:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4), 0 6px 6px rgba(0, 0, 0, 0.4);
+    cursor: pointer;
+}
+.desc {
+    font-size: 20px;
+    text-align: center;
+    margin-top: -10px;
+    word-wrap: break-word; /* Ensure long words break to the next line */
+    overflow-wrap: break-word; /* Ensure long words break to the next line */
+    max-width: 100%; /* Ensure the container does not exceed the width of its parent */
+    white-space: normal; 
+    padding-left: 10px;
+    padding-right: 10px;
+    line-height: .8;
+
+}
+.author {
+    
+    font-size: 15px;
+    text-align: center;
+    font-weight: 700;
+    margin-right: 10px;
+
+}
+
+.title  {
+    font-size: 20px;
+    text-align: center;
+    font-weight: 700;
+    padding-bottom: 10px;
+    margin-top: 10px;
+    
+}
+
+
+.nested_container {
+    margin-top: -15px;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 33% 33% 33%;
+    flex-grow: 1;
+}
+.nested_container_m {
+    margin-top: 8px;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 33% 33% 33%;
+    flex-grow: 1;
+}
+
+.label{
+    display: flex;
+    font-size: 20px;
+    align-items: center; 
+    justify-content: left; 
+    padding-left: 15px;
+    margin-left: 10px;
+    height: 100%; 
+    text-align: center;
+    border-bottom: 3px solid #949494;
+}
+.label_m{
+    padding-bottom: 10px;
+    font-size: 20px;
+    display: flex;
+    align-items: center; 
+    justify-content: left; 
+    padding-left: 15px;
+    margin-left: 10px;
+    height: 100%; 
+    text-align: center;
+    border-bottom: 3px solid #949494;
+}
+.label_last{
+    font-size: 20px;
+    display: flex;
+    align-items: center; 
+    justify-content: left; 
+    padding-left: 15px;
+    margin-left: 10px;
+    height: 100%; 
+    text-align: center;
+}
+
+.label_last_m{
+    padding-top: 10px;
+    font-size: 20px;
+    display: flex;
+    align-items: center; 
+    justify-content: left; 
+    padding-left: 15px;
+    margin-left: 10px;
+    height: 100%; 
+    text-align: center;
+}
+
+
+.value {
+    font-size: 20px;
+    display: flex;
+    align-items: center; 
+    justify-content: right; 
+    padding-right: 15px;
+    margin-right: 10px;
+    height: 100%; 
+    text-align: center;
+    border-bottom: 3px solid #949494;
+}
+.value_m {
+    padding-bottom: 10px;
+    font-size: 20px;
+    display: flex;
+    align-items: center; 
+    justify-content: right; 
+    padding-right: 15px;
+    margin-right: 10px;
+    height: 100%; 
+    text-align: center;
+    border-bottom: 3px solid #949494;
+}
+
+.status {
+    position: absolute;
+    transform: translate(320px, -10px);
+    padding-top: 10px;
+    font-size: 12px;
+    text-align: right;
+    padding-right: 5px;
+    margin-top: -10px
+}
+.value_last {
+    font-size: 20px;
+    display: flex;
+    align-items: center; 
+    justify-content: right; 
+    padding-right: 15px;
+    margin-right: 10px;
+    height: 100%; 
+    text-align: center;
+
+}
+
+.value_last_m {
+    padding-top: 10px;
+    font-size: 20px;
+    display: flex;
+    align-items: center; 
+    justify-content: right; 
+    padding-right: 15px;
+    margin-right: 10px;
+    height: 100%; 
+    text-align: center;
+
+}
+
+.graphContainer {
+    /* transform: translateY(25px); */
+    width: 100%; /* Fixed width */
+    height: 200px; /* Fixed height */
+    position: relative; /* Required for Chart.js to work correctly */
+}
+
+.graphContainer canvas {
+    width: 100% !important; /* Ensure the canvas takes up the full width */
+    height: 100% !important; /* Ensure the canvas takes up the full height */
+}
+.graph{
+    /* transform: translateX(-13px); */
+    justify-content: center;
+    margin-left: 18px;
+    width: 90%;
+    height: 50%;
+    flex-grow: 1;
+    margin-top: 10px;
+
+}
+.no_graph{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 90%;
+    height: 100%;
+    flex-grow: 1;
+    font-size: 40px;
+    text-align: center;
+    margin-right: -10px;
+    color: #949494;
+    padding: 74px 45px 75px 75px;
+    
+}
+
+.role {
+    background-color: #1B263B;; /* Example background color */
+    color: #F0F0F5; /* Example text color */
+    font-weight: bold; /* Example style */
+    padding: 1px 3px; 
+    border-radius: 2px; 
+    margin-right: 10px; /* Space between roles */
+    font-size: 15px;
+}
+
+.space {
+    width: 10px; /* Adjust the width as needed */
+}
+
+.authorRolesContainer {
+    display: flex;
+    align-items: center; /* Align items vertically centered */
+    justify-content: center; /* Align items horizontally centered */
+}
+

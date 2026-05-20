@@ -1,0 +1,30 @@
+.sign-in-button {
+    border-radius: 15px;
+    height: 55px;
+    position: relative;
+    width: 195px;
+  }
+  
+  .sign-in-button .div {
+    color: #ffffff;
+    font-family: "Instrument Sans", Helvetica;
+    font-size: 25px;
+    font-weight: 600;
+    left: 58px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    text-align: center;
+    top: 11px;
+  }
+  
+  .sign-in-button:hover {
+    box-shadow: var(--shadow-4);
+  }
+  
+  .sign-in-button:hover .div {
+    font-size: 30px;
+    left: 50px;
+    top: 8px;
+  }
+  

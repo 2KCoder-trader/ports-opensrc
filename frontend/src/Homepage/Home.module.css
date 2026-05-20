@@ -1,0 +1,210 @@
+.container {
+    min-height: 100vh;
+    background-color: #121212;
+    color: white;
+  }
+  
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+  }
+  
+  .logo {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 1.25rem;
+    font-weight: 600;
+  }
+  
+  .logo img {
+    width: 32px;
+    height: 32px;
+  }
+
+  .headerButtons {
+    display: flex;
+    gap: 1rem;
+  }
+  
+  .button {
+    background-color: transparent;
+    border: 1px solid rgb(255, 255, 255);
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 0.25rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .button:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+  
+  .main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+  }
+  
+  .hero {
+    text-align: center;
+    margin-bottom: 4rem;
+  }
+
+  .hero h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .hero p {
+    color: #a0aec0;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1.5rem;
+  }
+  
+  .primaryButton {
+    background-color: #1E40AF;
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 0.25rem;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .primaryButton:hover {
+    background-color: #2c5282;
+  }
+  
+  .investText {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-top: 3rem;
+    color: #fff;
+  }
+  
+  .stockSection {
+    margin-top: 4rem;  
+    padding-top: 0;
+    text-align: center;  
+  }
+  
+  .portfolioSection h2, .stockSection h2, .descriptionSection h2 {
+    color: #fff;
+    font-size: 45px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-bottom: 0.5rem;
+  }
+  
+  .portfolioSection > p {
+    margin-top: 3rem;
+    color: #fff;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    text-align: center;
+  }
+.descriptionSection {
+    margin-bottom: 1rem;
+    word-wrap: normal;
+    max-width: 60rem;
+    margin-top: 4rem !important;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    padding: 2rem 0;
+    color: #fff;
+}
+  
+  .portfolioGrid {
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2rem;
+    width: 100%;
+    margin: 0 auto;
+    align-items: center;
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .portfolioGridBottom {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 2rem;
+  }
+  
+  
+  .portfolioCard img {
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+    transition: transform 0.3s;
+    }
+
+    .portfolioCard img:hover {
+      transform: scale(1.05);
+      background: "#0077B6";
+      box-shadow: 0px 0px 2px 1px #008CD780, 0px 0px 15px 0px #03045E80 inset;
+  }
+  
+  .stockGrid1 {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+  }
+
+  .stockGrid2 {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+  
+  .stockCard {
+    animation: float 3s ease-in-out infinite;
+  }
+  
+  .stockCard img {
+    border-radius: 0.5rem;
+  }
+  
+  @keyframes float {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+  }
+
+  @media (max-width: 768px) {
+    .portfolioGrid {
+      grid-template-columns: 1fr;
+    }
+    .portfolioGridBottom {
+      margin-top: 0;
+      flex-direction: column;
+      align-items: center;
+    }
+  }

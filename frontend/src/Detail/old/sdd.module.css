@@ -1,0 +1,52 @@
+
+.quick_info_label{
+    font-size: small;
+    font-weight: 700;
+    display: flex;
+    align-items: center; /* Center vertically */
+    justify-content: left; /* Center horizontally (optional) */
+    padding-left: 5%;
+    margin-left: 30%;
+    height: 100%; /* Ensure the element takes the full height of its container */
+    text-align: center;
+    border-bottom: 2px solid #949494;
+}
+.quick_info_value{
+    font-weight: 700;
+    font-size: small;
+    display: flex;
+    align-items: center; /* Center vertically */
+    justify-content: right; /* Center horizontally (optional) */
+    padding-right: 5%;
+    margin-right: 30%;
+    height: 100%; /* Ensure the element takes the full height of its container */
+    text-align: center;
+    border-bottom: 2px solid #949494;
+}
+
+.quick_info_label_last{
+    font-weight: 700;
+    font-size: small;
+    display: flex;
+    align-items: center; /* Center vertically */
+    justify-content: left; /* Center horizontally (optional) */
+    padding-left: 25%;
+    margin-left: 10%;
+    height: 100%; /* Ensure the element takes the full height of its container */
+    text-align: center;
+    border-bottom: 3px solid #949494;
+}
+
+.quick_info_value_last{
+    font-weight: 700;
+    font-size: small;
+    display: flex;
+    align-items: center; /* Center vertically */
+    justify-content: right; /* Center horizontally (optional) */
+    padding-right: 25%;
+    margin-right: 10%;
+    height: 100%; /* Ensure the element takes the full height of its container */
+    text-align: center;
+    border-bottom: 3px solid #949494;
+}
+
